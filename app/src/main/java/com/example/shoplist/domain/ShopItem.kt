@@ -10,5 +10,6 @@ data class ShopItem(
 {
     companion object {
         const val UNDEF_ID = -1
+
     }
 }
