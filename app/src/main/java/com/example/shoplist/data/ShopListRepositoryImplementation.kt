@@ -6,16 +6,13 @@ import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.map
 import com.example.shoplist.domain.ShopItem
 import com.example.shoplist.domain.ShopListRepository
+import javax.inject.Inject
 
 
-class ShopListRepositoryImplementation(
-application: Application
+class ShopListRepositoryImplementation @Inject constructor(
+    private val shopListDao: ShopListDao,
+    private val mappers: Mappers
 ): ShopListRepository {
-
-
-    private val shopListDao = AppDataBase.getInstanceDb(application).shopListDao()
-
-    private val mappers = Mappers()
 
 
     override suspend fun editChangeShopItem(shopItem: ShopItem) {
