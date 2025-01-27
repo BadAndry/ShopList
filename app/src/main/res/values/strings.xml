@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">ShopList</string>
+    <string name="add_new_shop_item">Add new shop item</string>
+    <string name="count">count</string>
+    <string name="shopitem">ShopItem</string>
+    <string name="put_name">Name</string>
+    <string name="put_count">Count:</string>
+    <string name="save">Save:</string>
+    <string name="Error">Error:</string>
+    <string name="ErrorInPutName">ErrorInputName:</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
